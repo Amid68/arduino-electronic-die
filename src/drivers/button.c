@@ -13,6 +13,8 @@
 
 void Button_Init(void) {
     GPIO_SetPinDirection(BUTTON_PIN, GPIO_INPUT);
+    // Enable internal pull-up resistor
+    GPIO_WritePin(BUTTON_PIN, GPIO_HIGH);
 }
 
 int Button_IsPressed(void) {

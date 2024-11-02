@@ -9,8 +9,10 @@
 #include "dice.h"
 #include "display.h"
 #include "button.h"
+#include "delay.h"
 
 int main(void) {
+    Delay_Init();
     Dice_Init();
     Display_Init();
     Button_Init();
